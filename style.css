@@ -1,0 +1,147 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 20px;
+    direction: rtl;
+}
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+h1 {
+    color: #2c3e50;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.input-group {
+    display: flex;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    min-width: 200px;
+}
+button {
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+button:hover {
+    background-color: #2980b9;
+}
+button.active {
+    background-color: #2c3e50;
+    font-weight: bold;
+}
+.lists-container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.list {
+    flex: 1;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 15px;
+    background-color: #f9f9f9;
+    min-width: 300px;
+}
+h2 {
+    color: #2c3e50;
+    margin-top: 0;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 10px;
+}
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+li {
+    padding: 8px;
+    border-bottom: 1px solid #eee;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+li span.rank {
+    background-color: #3498db;
+    color: white;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+}
+.edit-btn {
+    background-color: #27ae60;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 4px 8px;
+    margin-right: 8px;
+    cursor: pointer;
+    font-size: 12px;
+}
+.edit-btn:hover {
+    background-color: #219653;
+}
+.save-btn {
+    background-color: #e67e22;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 4px 8px;
+    margin-right: 8px;
+    cursor: pointer;
+    font-size: 12px;
+}
+.save-btn:hover {
+    background-color: #d35400;
+}
+.name-display {
+    flex-grow: 1;
+    margin: 0 10px;
+}
+.name-edit {
+    flex-grow: 1;
+    margin: 0 10px;
+    padding: 4px;
+    border: 1px solid #3498db;
+    border-radius: 4px;
+    font-size: 16px;
+    direction: rtl;
+}
+.error {
+    color: #e74c3c;
+    margin-top: 10px;
+}
+@media (max-width: 650px) {
+    .lists-container {
+        flex-direction: column;
+    }
+    .input-group {
+        flex-direction: column;
+    }
+    input, button {
+        width: 100%;
+        margin-bottom: 5px;
+    }
+}
