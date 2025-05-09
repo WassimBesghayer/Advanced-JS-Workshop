@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <link rel="script" type="text/javascript" href="./script.js">
+    <title>ترتيب الأسماء العربية</title>
+</head>
+<body>
+    <div class="container">
+        <h1>ترتيب الأسماء حسب الأبجدية العربية</h1>
+        
+        <div class="input-group">
+            <input type="text" id="nameInput" placeholder="أدخل اسماً" dir="rtl">
+            <button id="addButton">إضافة</button>
+            <button id="sortAscButton">ترتيب تصاعدي</button>
+            <button id="sortDescButton">ترتيب تنازلي</button>
+            <button id="resetButton">إعادة ضبط</button>
+        </div>
+        
+        <div id="errorMessage" class="error"></div>
+        
+        <div class="lists-container">
+            <div class="list">
+                <h2>القائمة الأصلية</h2>
+                <ul id="originalList"></ul>
+            </div>
+            <div class="list">
+                <h2>القائمة المرتبة</h2>
+                <ul id="sortedList"></ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
